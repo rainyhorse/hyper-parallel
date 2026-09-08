@@ -118,6 +118,7 @@ function validate_soc_list() {
     if [[ ${#requested_socs[@]} -eq 0 ]]; then
         die "--soc-list must select at least one CANN SoC ID."
     fi
+    echo "this is a test pr"
     for requested_soc in "${requested_socs[@]}"; do
         requested_soc="${requested_soc//[[:space:]]/}"
         case "${requested_soc}" in
